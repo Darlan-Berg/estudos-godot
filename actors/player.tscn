@@ -39,9 +39,18 @@ position = Vector2(-1, 1)
 shape = SubResource("CapsuleShape2D_3kr48")
 
 [node name="camera" type="Camera2D" parent="."]
+limit_left = 0
+limit_right = 900
+limit_smoothed = true
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_left_margin = 0.4
+drag_right_margin = 0.4
+editor_draw_limits = true
+editor_draw_drag_margin = true
 
 [node name="animation" type="AnimatedSprite2D" parent="."]
-position = Vector2(-1, -5)
+position = Vector2(-1, -8)
 sprite_frames = SubResource("SpriteFrames_t35kh")
 animation = &"idle"
 autoplay = "idle"
